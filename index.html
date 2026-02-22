@@ -1,624 +1,70 @@
 <!DOCTYPE html>
-
-<html lang="vi">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <title>CTNE iOS </title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-
-        /* CSS Chung cho toàn bộ trang */
-
-        body {
-
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-
-            background-color: #f0f2f5;
-
-            padding: 20px 20px 50px 20px;
-
-            margin: 0;
-
-            display: flex;
-
-            flex-direction: column;
-
-            align-items: center;
-
-        }
-
-
-
-        /* Định dạng cho Banner Tiêu đề */
-
-        .header-banner {
-
-            background-color: #ffffff;
-
-            border: 2px solid #55aaff;
-
-            border-radius: 12px;
-
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-            width: 100%;
-
-            max-width: 450px;
-
-            padding: 15px 10px;
-
-            margin-bottom: 25px;
-
-            text-align: center;
-
-        }
-
-
-
-        .header-title {
-
-            font-size: 1.2em;
-
-            font-weight: 700;
-
-            margin-bottom: 5px;
-
-        }
-
-
-
-        .header-title-main {
-
-            color: #b854e7; /* Màu tím */
-
-        }
-
-        
-
-        .header-title-sub {
-
-            color: #007aff; /* Màu xanh dương */
-
-        }
-
-
-
-        .header-support {
-
-            font-size: 1em;
-
-            font-weight: 600;
-
-            color: #ff0000; /* Màu đỏ */
-
-            margin-top: 5px;
-
-        }
-
-
-
-        /* Định dạng cho Link Discord */
-
-        .header-link a {
-
-            font-size: 0.9em;
-
-            font-weight: 600;
-
-            color: #7289da; /* Màu Discord */
-
-            text-decoration: none;
-
-            display: block;
-
-            margin-top: 5px;
-
-        }
-
-        .header-link a:hover {
-
-            text-decoration: underline;
-
-        }
-
-
-
-
-
-        /* Định dạng cho Thẻ Ứng Dụng */
-
-        .app-card {
-
-            background-color: #ffffff;
-
-            border-radius: 15px;
-
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-            width: 100%;
-
-            max-width: 450px;
-
-            padding: 15px;
-
-            margin-bottom: 12px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-        }
-
-
-
-        .app-info {
-
-            display: flex;
-
-            align-items: center;
-
-            flex-grow: 1;
-
-        }
-
-
-
-        .app-icon {
-
-            width: 60px;
-
-            height: 60px;
-
-            border-radius: 15px;
-
-            margin-right: 15px;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            font-size: 20px;
-
-            color: white;
-
-            font-weight: bold;
-
-            overflow: hidden;
-
-        }
-
-        
-
-        .app-title h3 {
-
-            margin: 0;
-
-            color: #1e1e1e;
-
-            font-size: 1.1em;
-
-            font-weight: 600;
-
-        }
-
-        
-
-        .app-rating p {
-
-            margin: 4px 0 0 0;
-
-            color: #666;
-
-            font-size: 0.9em;
-
-        }
-
-
-
-        .stars {
-
-            color: #ffc107;
-
-        }
-
-        
-
-        /* Nút Get App */
-
-        .get-app-button {
-
-            background-color: #007aff;
-
-            color: white;
-
-            text-decoration: none;
-
-            padding: 10px 18px;
-
-            border-radius: 20px;
-
-            font-weight: 600;
-
-            font-size: 0.9em;
-
-            text-align: center;
-
-            transition: background-color 0.2s;
-
-            min-width: 70px;
-
-        }
-
-
-
-        .get-app-button:hover {
-
-            background-color: #005bb5;
-
-        }
-
-
-
-    </style>
-
-</head>
-
-<body>
-
-
-
-    <div class="header-banner">
-
-        <div class="header-title">
-
-            <span class="header-title-main">@CTNE</span>
-
-            <span class="header-title-sub">- IOS@</span>
-
-        </div>
-
-        
-
-        <div class="header-support">
-
-            # File IPA
-
-        </div>
-
-        
-
-        <div class="header-link">
-
-            <a href="https://discord.gg/cFrgCPvQ" target="_blank">
-
-                Tham gia Discord: discord.gg/cFrgCPvQ
-
-            </a>
-
-        </div>
-
-    </div>
-
-    
-
-    <div class="app-card">
-
-        <div class="app-info">
-
-           <img src="https://i.ibb.co/7dS6PGJQ/images.png">
-
-            </div>
-
-            <div class="app-title">
-
-                <h3>Delta X VNG<span style="color: #007aff; font-size: 0.9em;"> V9</span></h3>
-
-                <div class="app-rating">
-
-                    <p>
-
-                        <span class="stars">★★★★★</span>
-
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        
-
-        <a href="itms-services://?action=download-manifest&url=https://ipa.ipasign.cc:2052/sign/20260220093935370/3ea17def-1b02-b1a2-19a2-297057252986/app.plist" class="get-app-button">
-
-            <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-
-        </a>
-
-    </div>
-
-    
-
-    <div class="app-card">
-
-        <div class="app-info">
-
-            <img src="https://i.ibb.co/7dS6PGJQ/images.png">
-            </div>
-
-            <div class="app-title">
-
-                <h3>SkiBiX <span style="color: #007aff; font-size: 0.9em;">V5 (NoKey)</span></h3>
-
-                <div class="app-rating">
-
-                    <p>
-
-                        <span class="stars">★★★★★</span>
-
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        
-
-        <a href="https://link4m.com/H1d2gCD" class="get-app-button">
-
-             <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-
-        </a>
-
-    </div>
-
-
-
-    <p style="color: green; font-weight: 600; margin-top: 20px; width: 100%; max-width: 450px; text-align: center;">by congthanhios 👍</p>
-
-</body>
-
-</html>
-<!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>CTNE </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* CSS Chung cho toàn bộ trang */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #f0f2f5;
-            padding: 20px 20px 50px 20px;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* === PHẦN HEADER (ios) === */
-        .header-banner {
-            background-color: #ffffff;
-            border: 2px solid #55aaff;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 450px;
-            padding: 15px 10px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
-
-        .header-title {
-            font-size: 1.2em;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-        .header-title-main { color: #007aff; }
-        .header-title-sub { color: #b854e7; }
-
-        .header-support {
-            font-size: 1em;
-            font-weight: 600;
-            color: #ff0000;
-            margin-top: 5px;
-        }
-
-        /* === THẺ ỨNG DỤNG === */
-        .app-card {
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 450px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .app-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        .app-info {
-            display: flex;
-            align-items: center;
-            flex-grow: 1;
-        }
-
-        .app-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
-            margin-right: 15px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            font-size: 15px; /* Giảm font size để chứa E.Sign */
-            color: white;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            line-height: 1.2;
-            padding: 5px;
-        }
-
-        .app-title h3 {
-            margin: 0;
-            color: #1e1e1e;
-            font-size: 1.1em;
-            font-weight: 600;
-        }
-        .app-rating p {
-            margin: 4px 0 0 0;
-            color: #666;
-            font-size: 0.9em;
-        }
-        .stars { color: #ffc107; }
-        
-        /* Nút Get App/Cert (Màu hồng/đỏ mới) */
-        .get-app-button {
-            background-color: #ff5c5c;
-            color: white;
-            text-decoration: none;
-            padding: 10px 18px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9em;
-            text-align: center;
-            transition: background-color 0.2s;
-            min-width: 70px;
-        }
-
-        .get-app-button:hover {
-            background-color: #e54a4a;
-        }
-        
-        .status-message {
-            color: green; 
-            font-weight: 600; 
-            margin-top: 20px; 
-            width: 100%; 
-            max-width: 450px; 
-            text-align: center;
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CertApple - GET FREE</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#f2f3f7;margin:0;padding:20px}
+.card{max-width:1100px;margin:auto;background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:flex;overflow:hidden}
+.left{flex:1;padding:25px}
+.right{width:360px;background:linear-gradient(160deg,#16c79a,#1b2cc1,#c2185b);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+.title{font-size:28px;font-weight:700}
+.title span{color:#ff9800}
+.desc{margin:12px 0 20px 0;font-size:14px}
+.row{display:flex;justify-content:space-between;padding:10px 12px;background:#f5f6fa;border-radius:8px;margin-bottom:8px}
+.btn{display:inline-block;background:#e53935;color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:600;margin-top:10px}
+.price{font-size:26px;font-weight:700;margin-top:8px}
+.icons{display:flex;gap:12px;margin-top:20px}
+.icons a{width:42px;height:42px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.15);transition:.2s}
+.icons a:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.icons img{width:22px;height:22px}
+</style>
 </head>
 <body>
 
-    <div class="header-banner">
-        <div class="header-title">
-            <span class="header-title-main">@esign and ksign</span>
-            <span class="header-title-sub">- cert@</span>
-        </div>
-        
-        <div class="header-support">
-            #esign and ksign
-        </div>
-        
+<div class="card">
+  <div class="left">
+    <div class="title">Certificate packages : <span>GET FREE</span></div>
+    <div class="desc">Free Apple certificate package for all users, suitable for temporary testing. No warranty, no technical support and high risk of revocation.</div>
+
+    <div class="row"><div>Waiting time</div><div>79 Hour</div></div>
+    <div class="row"><div>Duration</div><div>Unknown</div></div>
+    <div class="row"><div>Warranty</div><div>0 Day</div></div>
+    <div class="row"><div>Certificate file</div><div>P12 & MobileProvision</div></div>
+
+    <div style="margin-top:18px;font-weight:600">Pay via PayPal or USDT with <span style="color:#00aaff">0.00$</span></div>
+    <div class="price">0đ</div>
+
+    <button class="btn" onclick="downloadCert()">GET CERTIFICATE</button>
+
+    <div class="icons">
+      <a href="https://www.facebook.com/nguyencongthanh06" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+      </a>
+      <a href="https://discord.gg/ARpND3fR" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+      </a>
+      <a href="https://web.telegram.org/@thanhbuytowin" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+      </a>
     </div>
-    <div class="app-card">
-        <div class="app-info">
-            <img src="https://i.ibb.co/7xgw9dVJ/Screenshot-2025-12-17-191523.png">
-            </div>
-            <div class="app-title">
-                <h3> CERT <span style="color: #00a4d5; font-size: 0.9em;">CTNE</span></h3>
-                <div class="app-rating">
-                    <p>
-                        <span class="stars">★★★★★</span>
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <a href="https://drive.usercontent.google.com/u/0/uc?id=1dmJ_90l3mBlW9RxIOJjgA2GhIeRDT4Lz&export=download" class="get-app-button">
-            <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-        </a>
-        
+
   </div>
-    <div class="app-card">
-        <div class="app-info">
-            <img src="https://i.ibb.co/hRZLd28L/Screenshot-2026-01-11-224823.png">
-            </div>
-            <div class="app-title">
-                <h3>E.Sign <span style="color: #00a4d5; font-size: 0.9em;">CTNE</span></h3>
-                <div class="app-rating">
-                    <p>
-                        <span class="stars">★★★★★</span>
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <a href="itms-services://?action=download-manifest&url=https://ipa.ipasign.cc:2052/sign/20260220013730160/89a21968-07c3-e50a-8ceb-f854969824f2/app.plist" class="get-app-button">
-            <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-        </a>
+
+  <div class="right">
+    <div>
+      <div style="font-size:22px;font-weight:700">APPLE CERTIFICATE</div>
+      <div style="font-size:34px;font-weight:800;margin:10px 0">GET FREE</div>
+      <div>P12 & MOBILEPROVISION</div>
     </div>
-    <div class="app-card">
-        <div class="app-info">
-            <img src="https://i.ibb.co/23DkcdP4/Screenshot-2026-01-11-224844.png">
-            </div>
-            <div class="app-title">
-                <h3>KSign <span style="color: #007bff; font-size: 0.9em;">CTNE</span></h3>
-                <div class="app-rating">
-                    <p>
-                        <span class="stars">★★★★★</span>
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <a href="itms-services://?action=download-manifest&url=https://ipa.ipasign.cc:2052/sign/20260220091053895/bc890c76-3b45-7400-33c4-c32afb769267/app.plist" class="get-app-button">
-            <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-        </a>
-    </div>
-      <div class="app-card">
-        <div class="app-info">
-         <img src="https://i.ibb.co/S4Dn5ryb/Screenshot-2026-01-11-224806.png">
-            </div>
-            <div class="app-title">
-                <h3>Trollstore <span style="color: #007bff; font-size: 0.9em;">CTNE</span></h3>
-                <div class="app-rating">
-                    <p>
-                        <span class="stars">★★★★★</span>
-                        <span style="font-size: 0.8em; color: #999;">(999+M)</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <a href="https://is.gd/FOq0vm
-" class="get-app-button">
-            <svg class="icon" style="width: 24px;height: 24px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="739"><path d="M691.3 693.9c-24.7 0-44.8-20-44.8-44.8 0-24.7 20-44.8 44.8-44.8h40c190.6 0 176.8-274.4 0.2-268.1C671.2 37.2 208 145.1 299 445c-93-73.9-204.6 69.2-109.6 139.8 67.2 49.9 188.5-18.4 188.5 64.3 0 56.3-63.9 44.8-125.3 44.8-149.3 0-241.3-159.3-155.8-281.1 40.8-58.2 104.9-72.6 104.9-72.6C231.4 111.3 492.7-9.5 686.2 120c83.1 55.6 114.5 136.9 114.5 136.9 48.8 14.8 90.7 45.6 119.2 86.4 96 137.3 21.5 350.6-228.6 350.6zM514.2 335.8c0.2 0 0.3 0.1 0.5 0.1s0.3-0.1 0.5-0.1h-1z m177.1 421.1c0-17.5-45.8-17.3-63.3 0.1l-32.8 32.9c-14.1 14.1-38.2 4.2-38.2-15.8V380.6c0-24.5-17.9-44.4-42.3-44.7-24.5 0.3-47.2 20.1-47.2 44.7v393.5c0 19.9-24.1 29.9-38.2 15.8l-32.8-42.1c-17.5-17.5-45.3-9.3-62.8-9.3h-0.2c-17.5 44.8-17.6 55.1-0.1 72.6L449 931.5c35 35 91.6 37.3 126.6 2.3l115.7-114.6c17.5-17.5 0-45.2 0-62.7v0.4z" p-id="740"></path></svg>
-        </a>
-    </div>
-    <p class="status-message">EMAIL : nguyencongthanh10062011@gmail.com</p>
+  </div>
+</div>
+
+<script>
+function downloadCert(){
+  window.location.href = "https://drive.usercontent.google.com/u/0/uc?id=1dmJ_90l3mBlW9RxIOJjgA2GhIeRDT4Lz&export=download";
+}
+</script>
 </body>
 </html>
